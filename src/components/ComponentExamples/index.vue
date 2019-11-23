@@ -12,7 +12,7 @@ hljs.registerLanguage('xml', hljs_xml)
 hljs.registerLanguage('css', hljs_css)
 hljs.registerLanguage('javascript', hljs_javascript)
 
-const README_src = require('!file-loader!../../../README.html')
+const README_src = require('!file-loader!../../../README_.html')
 const requireCtx = require.context(
   '../ComponentExamples',
   false, // 不解析子文件夹
