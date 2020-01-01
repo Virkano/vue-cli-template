@@ -1,12 +1,12 @@
 import { mock } from 'mockjs'
 
 export const getList = function(opts, query) {
-  const { pageNum = 1, pageSize = 10 } = query
+  const { pageNum, pageSize } = query
   return mock({
     code: 200,
     data: {
-      pageNum,
-      pageSize,
+      pageNum: Number(pageNum) || 1,
+      pageSize: Number(pageSize) || 10,
       total: 2,
       'list|2': [
         {
