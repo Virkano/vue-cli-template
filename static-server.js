@@ -17,16 +17,9 @@ const app = express()
 
 /* 代理，更详细的配置规则：https://github.com/chimurai/http-proxy-middleware#options */
 app.use(
-  '/baseUrlXxx',
+  '/api',
   proxy({
     target: 'http://10.25.73.159:8081',
-    changeOrigin: true,
-  }),
-)
-app.use(
-  '/baseUrlYyy',
-  proxy({
-    target: 'http://10.25.73.159:8082',
     changeOrigin: true,
   }),
 )
