@@ -186,7 +186,7 @@
 
   `如：/project-list?type=1&search=keyword#position`
 
-- 路由的 name 值 (命名路由) 使用驼峰命名法
+- 路由的 name 值 (命名路由) 使用 kebab-case 命名法
 
 - 视图跳转尽量使用声明式
 
