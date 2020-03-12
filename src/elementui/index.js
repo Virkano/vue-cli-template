@@ -1,4 +1,4 @@
-/* 后期优化：手动把不需要用到的组件注释掉 (忽略 @/compoents/ComponentExamples/ 中用到的组件) */
+/* 后期优化：手动把不需要用到的组件注释掉 */
 
 import Vue from 'vue'
 import {
